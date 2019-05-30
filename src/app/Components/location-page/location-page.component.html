@@ -1,0 +1,42 @@
+<div id="container" class="mx-auto">
+    
+  <div id="nav">
+      <img src="assets\images\yallagame2.png"/>
+      <a class="navA" style="color: white" routerLink="">Logout</a>    
+  </div>
+
+  <h2>Find Your Location </h2>
+
+  <div class="example-container col-5 mx-auto shadow">
+  
+    <h4>Select Your Area to See Places for Fun</h4>
+    
+    <form class="mx-auto">
+
+      <div class="form-group">
+        
+          <select class="custom-select">
+            <option>Select Your City</option>
+            <option *ngFor="let city of cities">
+                {{city}}
+            </option>
+          </select>
+        
+        
+          <select class="custom-select">
+            <option>Select Your Area</option>
+              <option *ngFor="let area of areas">
+                {{area}}
+              </option>
+          </select>
+          <br>
+          <button mat-raised-button id="findBtn" color="warn" (click)="navigate()">Find Places</button>
+          
+        
+      </div>
+
+    </form>
+   
+  </div>
+
+</div>
