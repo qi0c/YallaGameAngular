@@ -26,6 +26,19 @@ export class AuthLoginService {
       catchError(this.handleError)
     );
   }
+
+  register(username: string, password: string) {
+    return this.http.post<any>('http://localhost:60354/api/auth/register', {username: username, password: password})
+    .pipe(map(user => {
+        // if (user) {
+        //   localStorage.setItem('currentUser', JSON.stringify(user));
+        // }
+      }),
+        
+      catchError(this.handleError)
+    );
+  }
+
   isLoggedIn() {
     if (localStorage.getItem('currentUser')) {
       return true;
