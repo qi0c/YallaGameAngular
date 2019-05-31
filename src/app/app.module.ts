@@ -17,7 +17,8 @@ import { RegisterComponent } from './Components/register/register.component';
 import {MatSelectModule} from '@angular/material/select';
 import { LocationPageComponent } from './Components/location-page/location-page.component';
 import { AuthLoginService } from './services/auth-login.service';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { HomeFiltrationContainerComponent } from './Components/home-filtration-container/home-filtration-container.component'; 
 // import { HttpModule } from '@angular/common/http';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     LocationPageComponent,
+    HomeFiltrationContainerComponent,
    
   ],
   imports: [
