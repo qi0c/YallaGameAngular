@@ -18,11 +18,8 @@ import { NavComponent } from './Components/nav/nav.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
-<<<<<<< HEAD
-=======
-import {MatSelectModule} from '@angular/material/select';
+
 import {MatTabsModule} from '@angular/material/tabs';
->>>>>>> 8bf6bd1f7407bd56c34b03460957b7e976081a58
 import { LocationPageComponent } from './Components/location-page/location-page.component';
 import { HomeFiltrationContainerComponent } from './Components/home-filtration-container/home-filtration-container.component';
 import { FiltrationComponent } from './Components/filtration/filtration.component';
