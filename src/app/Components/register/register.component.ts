@@ -67,6 +67,9 @@ cities=['Ismailia','Suez','Port-Said','Cairo'];
     return this.getUser().hasError('required') ? 'Must Select the Kind of User' :'';
   }
   
+  signup(){
+    
+  }
 
   ngOnInit() {
   }

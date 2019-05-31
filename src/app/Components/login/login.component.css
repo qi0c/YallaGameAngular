@@ -8,6 +8,28 @@
     /* display: flex;  */
     justify-content: space-between;
 }
+
+/* Styles for tab labels */
+/* .mat-tab-label {
+    min-width: 25px !important;
+    padding: 5px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+/* Styles for the active tab label */
+/* .mat-tab-label.mat-tab-label-active {
+    min-width: 25px !important;
+    padding: 5px;
+    background-color: transparent;
+    font-weight: 700;
+} */ 
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+    background-color: rgb(231, 166, 24) !important ;
+}
+
 .navA{
     float: right;
     color: white;
@@ -35,18 +57,18 @@ h4 {
      padding:0 10px; 
  }
 
-.example-container {
+.example-container,form {
    
     display: flex;
     flex-direction: column;
     border-radius: 3%;
     background-color: white;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
     margin: 10px;
     text-align: center;
-    margin-bottom: 100px
+    /* height: 500px; */
     
   }
   mat-form-field{
@@ -65,7 +87,7 @@ h4 {
       color: gray;
   }
   img{
-      width: 110px;
+      width: 100px;
       margin: 10px;
       
   }

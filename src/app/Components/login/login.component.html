@@ -1,34 +1,64 @@
 <div id="container" class="mx-auto">
     
-    <div id="nav">
-        <img src="assets\images\yallagame2.png"/>
-        <a class="navA" style="color: white" routerLink="">Login</a>
-        <a class="navA" style="color: white" routerLink="/register">Register</a>
-        
-    </div>
-    <h2>WELCOME</h2>
-    <h5>This will be an amazing fun just login and enjoy <mat-icon id="enjoy">sentiment_satisfied_alt</mat-icon> </h5>
- <form [formGroup]='form' (ngSubmit)="signIn()">
-    <div class="example-container col-3 mx-auto shadow">
-      <mat-icon id="profile" >account_circle</mat-icon>
-      <br>
-      <br>
-      <h4><span>Login</span></h4>
+  <div id="nav">
+      <img src="assets\images\yallagame2.png"/>
+      <a class="navA" style="color: white" routerLink="">Login</a>
+      <a class="navA" style="color: white" routerLink="/register">Register</a>
       
-        <mat-form-field>
-          <input matInput placeholder="Enter your email" [formControl]="getEmail()" required >
-          <mat-error *ngIf="getEmail().invalid">{{getErrorMessageEmail()}}</mat-error>
-        </mat-form-field>
-        <mat-form-field>
+  </div>
+  <h2>WELCOME</h2>
+  <h5>This will be an amazing fun just login and enjoy <mat-icon id="enjoy">sentiment_satisfied_alt</mat-icon></h5>
+
+  <div class="example-container col-4 mx-auto shadow">
+      <mat-tab-group mat-align-tabs="center" dynamicHeight>
+        <mat-tab label="Login as Preson">
+          <form [formGroup]='form' (ngSubmit)="signIn()">
+          <mat-icon id="profile" >account_circle</mat-icon>
+            
+            <br>
+            <br>
+            <h4><span>Person Login</span></h4>
+            
+            <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="getEmail()" required >
+              <mat-error *ngIf="getEmail().invalid">{{getErrorMessageEmail()}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Enter your Password" [formControl]="getPassword()" type="password" required>
+              <mat-error *ngIf="getPassword().invalid">{{getErrorMessagePwd()}}</mat-error>
+              <mat-error *ngIf="err">Username or Password incorrect</mat-error>
+            </mat-form-field>
+
+            <br>
+            <button mat-raised-button id="loginBtn" color="warn">Login</button>
+            <br>
+        
+          
+        </form>
+        </mat-tab>
+
+        <mat-tab label="Login as Place"><form [formGroup]='form' (ngSubmit)="signIn()">
+          <mat-icon id="profile" >account_circle</mat-icon>
+          <br>
+          <br>
+          <h4><span>Place Login</span></h4>
+          
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" [formControl]="getEmail()" required >
+            <mat-error *ngIf="getEmail().invalid">{{getErrorMessageEmail()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field>
             <input matInput placeholder="Enter your Password" [formControl]="getPassword()" type="password" required>
             <mat-error *ngIf="getPassword().invalid">{{getErrorMessagePwd()}}</mat-error>
           <mat-error *ngIf="err">Username or Password incorrect</mat-error>
-            
           </mat-form-field>
           <br>
           <button mat-raised-button id="loginBtn" color="warn">Login</button>
           <br>
-          <a style="color: blue">Forget Password ?</a>
-    </div>
-  </form>
+        </form>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+ 
 </div>
