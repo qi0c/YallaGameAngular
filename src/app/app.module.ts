@@ -24,6 +24,8 @@ import { LocationPageComponent } from './Components/location-page/location-page.
 import { HomeFiltrationContainerComponent } from './Components/home-filtration-container/home-filtration-container.component';
 import { FiltrationComponent } from './Components/filtration/filtration.component';
 import { HomeComponent } from './Components/home/home.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatCardModule} from '@angular/material/card';
 
 
 //services 
@@ -61,8 +63,9 @@ import { AuthLoginService } from './services/auth-login.service';
     MatSelectModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatTabsModule
-
+    MatTabsModule,
+    MatCheckboxModule,
+    MatCardModule
 
   ],
   providers: [AuthLoginService],
