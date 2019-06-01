@@ -1,7 +1,13 @@
 img{
-    width: 100px;
+    width: 60px;
+    margin: 0;
+    padding: 0 !important;
 }
 
 nav{
     background-color: rgb(5, 62, 128)
 }
+/* .btn-outline-success{
+    border: 2px solid yellow;
+   
+} */
