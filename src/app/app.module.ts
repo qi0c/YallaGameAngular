@@ -19,7 +19,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
 
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { LocationPageComponent } from './Components/location-page/location-page.component';
 import { HomeFiltrationContainerComponent } from './Components/home-filtration-container/home-filtration-container.component';
 import { FiltrationComponent } from './Components/filtration/filtration.component';
@@ -28,6 +28,7 @@ import { HomeComponent } from './Components/home/home.component';
 
 //services 
 import { AuthLoginService } from './services/auth-login.service';
+import { PlaceDetailsComponent } from './Components/place-details/place-details.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AuthLoginService } from './services/auth-login.service';
     HomeFiltrationContainerComponent,
     FiltrationComponent,
     HomeComponent,
+    PlaceDetailsComponent,
 
   ],
   imports: [
@@ -49,7 +51,8 @@ import { AuthLoginService } from './services/auth-login.service';
       { path: '', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'location', component: LocationPageComponent },
-      { path: 'hf', component: HomeFiltrationContainerComponent }
+      { path: 'hf', component: HomeFiltrationContainerComponent },
+      { path: 'pd', component: PlaceDetailsComponent }
     ]),
     MatFormFieldModule,
     MatInputModule,
